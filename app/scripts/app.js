@@ -39,11 +39,14 @@ myApp.controller('HomeController', function($scope, apiService) {
         post.showComments = true;
       });
     }
-    else{
+    else if(post.showComments == false){
       apiService.getCommentsByPost(post.id).then(function(response) {
         post.comments = response.data;
         post.showComments = !post.showComments;
       });
+    }
+    else{
+      post.showComments = !post.showComments;
     }
   };
 
