@@ -19,7 +19,7 @@ http-server /app
     - app.js
     - services/apiservice.js: contains the calls to the api.
     - settings/settings.js: contains the endpoints of the api.
-    - utils.utils.js: contains functions to reuse in the proyect.
+    - utils/utils.js: contains functions to reuse in the proyect.
   - style/main.css
   - views/home.html
  - tests/test.js
