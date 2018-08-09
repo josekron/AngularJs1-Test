@@ -29,10 +29,15 @@ http-server /app
 I used Karma + Jasmine to test the application. You need to install the following packages:
 
 npm install angular --save
+
 npm install angular-route.js --save
+
 npm install -g karma --save-dev
+
 npm install karma-jasmine jasmine-core --save-dev
+
 npm install angular-mocks --save-dev
+
 npm install karma-phantomjs-launcher --save-dev
 
 Run: karma start
