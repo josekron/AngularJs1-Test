@@ -7,7 +7,8 @@ To run it, click on app/index.html.
 
 Currently the main page is inside of index.html. To use the template views/home.html in local, you need to install a http server:
 
-npm install http-server.
+npm install http-server
+
 http-server /app
 
 ### Structure ###
@@ -34,4 +35,4 @@ npm install karma-jasmine jasmine-core --save-dev
 npm install angular-mocks --save-dev
 npm install karma-phantomjs-launcher --save-dev
 
-Run karma start
+Run: karma start
