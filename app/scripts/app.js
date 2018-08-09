@@ -28,8 +28,8 @@ myApp.controller('HomeController', function($scope, apiService) {
     title:undefined,
     body:undefined
   }
-  //
-  // getAllPosts();
+
+  getAllPosts();
 
   //make a call to get comments and display them
   $scope.displayComments = function(post){
@@ -55,13 +55,11 @@ myApp.controller('HomeController', function($scope, apiService) {
     }
   }
 
-  $scope.getAllPosts = function(){
+  function getAllPosts(){
     apiService.getAllPosts().then(function(response) {
       $scope.posts = response.data;
     });
   }
-
-  $scope.getAllPosts();
 
   function clearNewPost(){
     $scope.post ={
@@ -79,10 +77,4 @@ myApp.controller('HomeController', function($scope, apiService) {
     return isOk;
   }
 
-});
-
-myApp.filter('length', function() {
-  return function(text) {
-    return ('' + (text || '')).length;
-  }
 });
