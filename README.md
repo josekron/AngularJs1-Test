@@ -3,7 +3,7 @@
 
 ### Usage ###
 
-To run it, click on app/index.html.
+To run the application, click on app/index.html.
 
 Currently the main page is inside of index.html. To use the template views/home.html in local, you need to install a http server:
 
